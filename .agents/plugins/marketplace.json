@@ -1,0 +1,20 @@
+{
+  "name": "promptory",
+  "interface": {
+    "displayName": "Promptory"
+  },
+  "plugins": [
+    {
+      "name": "promptory",
+      "source": {
+        "source": "local",
+        "path": "./plugins/promptory"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

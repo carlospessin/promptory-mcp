@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "promptory": {
+      "url": "https://promptory-ppt.vercel.app/api/mcp"
+    }
+  }
+}
