@@ -10,13 +10,13 @@ folder.
 Show only a numbered list containing folder names. Prefix shared copies with
 `(compartilhada)`. Resolve a following number or name against the latest list,
 then call `list_prompts_by_folder`. Show the returned prompts as a numbered list.
-For every prompt, put its description on the indented line immediately below
-the title when one exists, for example:
+For every prompt, format `1. Prompt title — Prompt description` when one exists;
+show only `1. Prompt title` when there is no description, for example:
 
-1. Prompt title
-   Prompt description
+1. Prompt title — Prompt description
 
 Do not show the full content. If the user selects a prompt, call `get_prompt` and
-execute the retrieved instruction immediately. Before destructive or external
+execute the retrieved instruction immediately in the current conversation; do
+not merely paste or display the retrieved prompt. Before destructive or external
 actions, request explicit confirmation. Never expose tokens or request
 `user_id`.
